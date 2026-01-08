@@ -1,0 +1,23 @@
+/* Nguyên nhân:
+
+Thiếu cursor: pointer nên không có dấu hiệu hover
+Thiếu display: block hoặc inline-block nên có thể không nhận style đầy đủ
+Nên thêm color: white khi hover vì nền #555 là xám đậm */
+
+.btn-contact-artist {
+  font: 15px Verdana, sans-serif;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  text-align: center;
+  display: block; /* Thêm dòng này */
+  width: 100%; /* Thêm dòng này */
+  cursor: pointer; /* Thêm dòng này - QUAN TRỌNG */
+  border: none; /* Thêm nếu dùng button tag */
+  transition: background-color 0.3s ease; /* Thêm hiệu ứng mượt */
+}
+
+
+.btn-contact-artist:hover {
+  background-color: #555;
+  color: white; /* Thêm màu chữ trắng để dễ nhìn */
+}

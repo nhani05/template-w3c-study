@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 54.4px;
+  background-color: white;
+  align-items: center;
+  padding: 8px 16px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ */
+  transition: box-shadow 0.3s ease; /* Hiệu ứng mượt */
+}
+
+.header-nav a {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: black;
+  padding: 8px 16px;
+  letter-spacing: 5px;
+}
+
+.header-nav a:hover {
+  background-color: #aaa;
+}
+
+.header-intro img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* z-index: -1; */
+}
+
+.header-intro {
+    width: 100%;
+    height: 800px;
+    background-color: #ddd;
+    position: relative;
+    /* margin-top: 54.4px; */
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  font: 36px Arial, sans-serif;
+}
+
+.logo-box {
+  background-color: #333;
+  color:white;
+  display: inline-block;
+  padding: 8px 16px;
+  letter-spacing: 2px;
+}
+.logo-text {
+  color: white;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+.main-content {
+  padding: 8px 16px;
+}
+.description-project {
+  margin: 32px 16px;
+}
+.title-description-project {
+  font: 24px Arial, sans-serif;
+  padding: 16px 0px;
+  margin: 10px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.detail-project {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-info {
+  display: inline;
+  font: 15px Verdana, sans-serif;
+  background-color: black;
+  padding: 8px 16px;
+  color: white;
+  position: absolute;
+  height: auto;
+}
+
+/* the img bang 100% cua the cha chua no */
+.project-image img {
+  width: 100%; 
+  height: auto;
+}
+
+.project-card {
+  position: relative;
+  margin: 0px 0px 16px 0px;
+  padding: 0px 8px;
+  width: calc(25% - 8px);
+}
+
+.about {
+  margin: 32px 16px;
+}
+
+.about-title {
+  font: 24px Arial, sans-serif;
+  padding: 16px 0px;
+  margin: 10px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.about-content {
+  font: 15px Verdana, sans-serif;
+  margin: 15px 0px;
+}
+
+.about-artist {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artist-card {
+  position: relative;
+  padding: 0px 8px;
+  margin: 0px 0px 16px 0px;
+  width: calc(25% - 8px);
+}
+
+.artist-img img{
+  width: 100%;
+}
+
+.artist-name {
+  font: 24px "Segeo UI", Arial, sans-serif;
+  margin: 10px 0px;
+}
+
+.artist-position {
+  font: 15px Verdana, sans-serif;
+  margin: 15px 0px;
+  color: #444;
+}
+
+.artist-info {
+  font: 15px Verdana, sans-serif;
+  margin: 15px 0px;
+}
+
+.btn-contact-artist {
+  /* display: block; */
+  font: 15px Verdana, sans-serif;
+  background-color: #f1f1f1;
+  padding: 8px 16px;
+  text-align: center;
+  /* cursor: pointer; Thêm dòng này - QUAN TRỌNG */
+}
+
+.btn-contact-artist:hover {
+  background-color: #aaa;
+} 
+
+.contact-form {
+  padding:32px 16px;
+}
+
+.contact-title {
+  font: 24px "Segeo UI", Arial, sans-serif;
+  margin: 10px 0px;
+  padding: 16px 0px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-description-form {
+  font: 15px Verdana, sans-serif;
+  margin: 15px 0px;
+}
+
+.input-contact-form {
+  display: block;
+  width: 100%;
+  margin: 16px 0px;
+  padding: 8px;
+  border: 1px solid #aaa;
+}
+
+.btn-contact-form {
+  background-color: black;
+  color: white;
+  font: 15px Verdana, sans-serif;
+  padding: 8px 16px;
+  margin: 16px 0px;
+  border: none;
+}
+
+.btn-contact-form:hover {
+  background-color: #aaa;
+  color: black;
+}
+
+.image-end {
+  padding: 0.15px 16px;
+}
+
+.image-end img {
+  width: 100%;
+  display: block;
+}
+
+.content-footer {
+  display: block;
+  background-color: #000;
+  color: #fff;
+  font: 15px Verdana, sans-serif;
+  text-align: center;
+  padding: 32px;
+}
